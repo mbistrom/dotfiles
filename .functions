@@ -1,0 +1,9 @@
+# Start an HTTP server with PHP from a directory, optionally specifying the port
+function phpserver() {
+	local port="${1:-8000}";
+	sleep 1 && open "http://localhost:${port}/" &
+	docker run -it --rm --name my-apache -v "$PWD":/var/www/html -p ${port}:80 php:7.2.12-apache;
+}
+
+# If this is a Splunk machine, set up Splunk Environment
+[ -f /opt/splunk/bin/setSplunkEnv ] && source /opt/splunk/bin/setSplunkEnv && echo "Splunk detected - Added Splunk Env" || echo "Splunk not detected"
