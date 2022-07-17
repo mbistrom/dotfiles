@@ -16,3 +16,7 @@ sudo dnf install git zsh util-linux-user
 
 echo "### Changing default shell to ZSH"
 chsh -s $(which zsh)
+
+#echo "### Sourcing ZSH config"
+#source ~/.zshrc
+
