@@ -43,3 +43,7 @@ compinit
 source ~/.dotfiles/.aliases
 source ~/.dotfiles/.functions
 
+# Load plugins
+
+source ~/.local/share/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh

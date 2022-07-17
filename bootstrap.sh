@@ -1,12 +1,18 @@
-echo "Pulling the latest version of the repo"
+echo "### Pulling the latest version of the repo"
 git pull
 
-echo "Creating symlinks for dotfiles"
+echo "### Creating necessary folders"
+mkdir ~/.local
+mkdir ~/.local/bin
+mkdir ~/.local/share
+
+echo "### Creating symlinks for dotfiles"
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/.local/bin/update-zsh-plugins ~/.local/bin/update-zsh-plugins
 
-echo "installing packages"
-dnf install git zsh util-linux-user
+echo "### Installing packages"
+sudo dnf install git zsh util-linux-user
 
-echo "Changing default shell to ZSH"
+echo "### Changing default shell to ZSH"
 chsh -s $(which zsh)
