@@ -12,7 +12,7 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.local/bin/update-zsh-plugins ~/.local/bin/update-zsh-plugins
 
 echo "### Installing packages"
-sudo dnf install git zsh util-linux-user
+sudo dnf -y install git zsh util-linux-user
 
 echo "installing/updating ZSH plugins"
 ~/.local/bin/update-zsh-plugins
