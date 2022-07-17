@@ -6,7 +6,7 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 echo "installing packages"
-dnf install zsh util-linux-user
+dnf install git zsh util-linux-user
 
 echo "Changing default shell to ZSH"
 chsh -s $(which zsh)
