@@ -20,6 +20,10 @@ echo "installing/updating ZSH plugins"
 echo "### Changing default shell to ZSH"
 sudo chsh -s $(which zsh) $(whoami)
 
+echo "### Please logout and login again to use ZSH - or not?"
+
+zsh
+
 #echo "### Sourcing ZSH config"
 #source ~/.zshrc
 
