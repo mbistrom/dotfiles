@@ -15,7 +15,7 @@ echo "### Installing packages"
 sudo dnf install git zsh util-linux-user
 
 echo "### Changing default shell to ZSH"
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $(whoami)
 
 #echo "### Sourcing ZSH config"
 #source ~/.zshrc
