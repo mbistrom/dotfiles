@@ -14,6 +14,9 @@ ln -s ~/.dotfiles/.local/bin/update-zsh-plugins ~/.local/bin/update-zsh-plugins
 echo "### Installing packages"
 sudo dnf install git zsh util-linux-user
 
+echo "installing/updating ZSH plugins"
+~/.local/bin/update-zsh-plugins
+
 echo "### Changing default shell to ZSH"
 sudo chsh -s $(which zsh) $(whoami)
 
