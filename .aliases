@@ -1,3 +1,4 @@
 # Aliases
 
-alias ll="ls -lah"
+# List all files colorized in long format, including dot files
+alias ll="ls -lahF"
