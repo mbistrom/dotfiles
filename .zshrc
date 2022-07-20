@@ -25,6 +25,10 @@ bindkey '\e[F' end-of-line
 bindkey '\e[8~' end-of-line
 bindkey '\e[3~' delete-char
 
+# Better history search with arrow keys
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
