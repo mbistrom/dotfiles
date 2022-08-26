@@ -3,6 +3,7 @@ GREEN='\033[0;32m' # Green
 NC='\033[0m' # No Color
 
 echo "${RED}### ${GREEN}Pulling the latest version of the repo${NC}"
+cd ~/.dotfiles
 git pull
 
 echo "${RED}### ${GREEN}Creating necessary folders${NC}"
