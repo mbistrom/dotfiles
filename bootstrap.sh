@@ -10,10 +10,12 @@ else
    ESCAPE="-e"
 fi
 
-# Change into the .dotfiles directory and update pull the repo
-echo ${ESCAPE} "${RED}### ${GREEN}Pulling the latest version of the repo${NC}"
-cd ~/.dotfiles
-git pull
+# Change into the .dotfiles directory and update pull the repo, ignoring local changes
+#echo ${ESCAPE} "${RED}### ${GREEN}Pulling the latest version of the repo${NC}"
+#cd ~/.dotfiles
+#git reset --hard
+#git pull
+#boostrap.sh
 
 # Create necessary folders
 echo ${ESCAPE} "${RED}### ${GREEN}Creating necessary folders${NC}"
