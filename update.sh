@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Set up prompt colors
 RED='\033[0;31m' # Red
 GREEN='\033[0;32m' # Green
