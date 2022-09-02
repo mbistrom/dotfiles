@@ -33,15 +33,15 @@ echo ${ESCAPE} "${RED}### ${GREEN}Detecting package manager${NC}"
 
 if VERB="$( which apt-get )" 2> /dev/null; then
    echo ${ESCAPE} "${RED}### ${GREEN}Debian-based distro detected - Using APT${NC}"
-   sudo apt-get -y install git zsh
+   sudo apt-get -y install git zsh exa
 elif VERB="$( which yum )" 2> /dev/null; then
    echo ${ESCAPE} "${RED}### ${GREEN}Modern Red Hat-based distro detected - Using Yum${NC}"
-   sudo yum -y install git zsh util-linux-user
+   sudo yum -y install git zsh util-linux-user exa
 elif [[ $OSTYPE == 'darwin'* ]]; then
    echo ${ESCAPE} "${RED}### ${GREEN}MacOS detected - Checking for Homebrew${NC}"
    if VERB="$( which brew )" 2> /dev/null; then
        echo ${ESCAPE} "${RED}### ${GREEN}Using Homebrew${NC}"
-       brew install git
+       brew install git exa
    else
        echo ${ESCAPE} "${RED}### Homebrew not found - Please install it!${NC}"
        exit 1

@@ -1,6 +1,16 @@
 # Aliases
 
 # List all files colorized in long format, including dot files
+
+# Set LS to use colrized outputs
 export CLICOLOR=1
 alias ls="ls --color=auto"
+
+# If EXA is installed, use it instead of LS
+if command -v exa &> /dev/null
+then
+	alias ls="exa"
+fi
+
+# Default to deatiled file listing, including hidden files
 alias ll="ls -lahF"
