@@ -132,8 +132,8 @@ ssh-color-compress-color() {
 }
 
 ssh-color-reset() {
-  ssh-change-title " localhost "
-  ssh-change-color 000000
+#  ssh-change-title " localhost "
+#  ssh-change-color 000000
 }
 
 ssh-color() {
@@ -177,4 +177,4 @@ ssh-color() {
 SSH_BINARY=$(type -a ssh|awk '!/alias/ && !/function/ {print $NF}'|head -n1)
 compdef _ssh ssh-color=ssh
 alias ssh=ssh-color
-ssh-color-reset
+#ssh-color-reset
