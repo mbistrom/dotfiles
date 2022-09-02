@@ -1,5 +1,6 @@
 # Aliases
 
 # List all files colorized in long format, including dot files
+export CLICOLOR=1
 alias ls="ls --color=auto"
 alias ll="ls -lahF"
