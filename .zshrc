@@ -30,7 +30,8 @@ bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+#HISTFILE=~/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt beep extendedglob nomatch notify
@@ -44,8 +45,15 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source ~/.dotfiles/.aliases
-source ~/.dotfiles/.functions
+# Load Aliases and Functions
+
+for file in ~/.dotfiles/aliases.d/.*; do
+    source "$file"
+done
+
+for file in ~/.dotfiles/functions.d/.*; do
+    source "$file"
+done
 
 # Load plugins
 
