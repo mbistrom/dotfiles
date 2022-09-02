@@ -19,9 +19,11 @@ fi
 
 # Create necessary folders
 echo ${ESCAPE} "${RED}### ${GREEN}Creating necessary folders${NC}"
-mkdir ~/.local
-mkdir ~/.local/bin
-mkdir ~/.local/share
+mkdir -p ~/.local/{bin,share}
+
+#mkdir ~/.local
+#mkdir ~/.local/bin
+#mkdir ~/.local/share
 
 # Create symlinks
 echo ${ESCAPE} "${RED}### ${GREEN}Creating symlinks for dotfiles${NC}"
