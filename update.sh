@@ -17,5 +17,5 @@ git reset --hard
 git pull
 
 echo ${ESCAPE} "${RED}### ${GREEN}Runnign the bootstrapper${NC}"
-bootstrap.sh
+./bootstrap.sh
 
