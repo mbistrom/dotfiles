@@ -59,3 +59,9 @@ done
 
 source ~/.local/share/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Fix Home and End-keys
+
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
