@@ -14,3 +14,10 @@ fi
 
 # Default to deatiled file listing, including hidden files
 alias ll="ls -lahF"
+
+# Get macOS Software Updates, and update Homebrew
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
