@@ -176,5 +176,5 @@ ssh-color() {
 
 SSH_BINARY=$(type -a ssh|awk '!/alias/ && !/function/ {print $NF}'|head -n1)
 compdef _ssh ssh-color=ssh
-alias ssh=ssh-color
+#alias ssh=ssh-color
 #ssh-color-reset
